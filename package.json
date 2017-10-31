@@ -1,0 +1,10 @@
+{
+  "name": "meteor-kudu-init",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node bundle/main"
+  },
+  "author": "David Titarenco",
+  "license": "MIT"
+}
