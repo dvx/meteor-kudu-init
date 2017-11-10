@@ -44,7 +44,7 @@ if [ -d "bundle" ]; then
   rm -rf "bundle" || error_exit "Could not clear old bundle"
 fi
 mkdir "bundle"
-unzip "${BUILDS_DIR}/bundle.zip" -d "bundle" || error_exit "Could not unpack bundle"
+unzip -qq "${BUILDS_DIR}/bundle.zip" -d "bundle" || error_exit "Could not unpack bundle"
 
 # We can't use mv because we're the deployment/repository user, so copy (and remove) instead
 print "Moving bundle to ${DEPLOYMENT_TARGET}"
